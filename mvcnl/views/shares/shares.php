@@ -31,6 +31,12 @@ $shares = $sharesObj->getShares();
                 <p class="card-text"><?php echo $share->body; ?></p>
 
                 <a href="/Opdracht%203/mvcnl/index.php" class="btn btn-primary" target="_blank">Go To Website</a>
+
+                <!-- Delete Formulier -->
+                <form action="/Opdracht%203/mvcnl/index.php?controller=shares&action=deleteShare" method="POST" class="d-inline">
+                    <input type="hidden" name="id" value="<?php echo $share->id; ?>">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
             </div>
         </div>
     <?php endforeach; ?>

@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($sharesObj->deleteShare($shareId)) {
         $sharesObj = new Shares();
-        header('Location: /Opdracht%203/mvcnl/index.php?controller=shares&action=index');
+        header('Location: /Opdracht%203/mvcnl/index.php?controller=shares&action=shares');
     } else {
         echo 'Failed to delete share';
         exit();
