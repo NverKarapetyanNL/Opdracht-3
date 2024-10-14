@@ -5,6 +5,8 @@ use controllers\UsersController;
 
 session_start();
 include_once __DIR__ . '/includes/class-autoload.inc.php';
+include_once __DIR__ . '/views/navbar.php';
+
 
 $action = $_GET['action'] ?? 'home';
 
@@ -42,7 +44,6 @@ if ($action === 'login') {
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<?php include 'views/navbar.php'; ?>
 
 <div class="container text-center mt-5">
     <h1>Welcome To ShareBoard</h1>

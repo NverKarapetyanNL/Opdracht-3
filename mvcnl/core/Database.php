@@ -1,8 +1,11 @@
 <?php
+
 namespace core;
+
 use PDO;
 
-class Database {
+class Database
+{
     private string $host = 'localhost';
     private string $user = 'root';
     private string $pwd = 'mysql';

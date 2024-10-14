@@ -9,7 +9,6 @@ if (isset($_SESSION['user_id'])) {
     header('Location: /../index.php');
     exit();
 }
-include_once __DIR__ . '/../navbar.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $usersObj = new Users();

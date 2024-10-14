@@ -1,11 +1,10 @@
 <?php
-include_once __DIR__ . '/../navbar.php';
 
 ?>
 
 <div class="container mt-5">
     <h2>Register</h2>
-    <form method="POST" action="/../index.php?controller=users&action=register">
+    <form method="POST" action="/index.php?controller=users&action=register">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>

@@ -1,8 +1,8 @@
 <?php
+
 use models\Shares;
 
 include_once __DIR__ . '/../../includes/class-autoload.inc.php';
-include_once __DIR__ . '/../navbar.php';
 
 $sharesObj = new Shares();
 $shares = $sharesObj->getShares();
