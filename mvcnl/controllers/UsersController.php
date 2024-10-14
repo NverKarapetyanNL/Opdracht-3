@@ -40,7 +40,7 @@ class UsersController extends Controller
                 session_start();
                 $_SESSION['user_id'] = $user->id;
                 $_SESSION['user_name'] = $user->name;
-                header('Location: /Opdracht%203/mvcnl/index.php?controller=shares&action=index');
+                header('Location: /Opdracht%203/mvcnl/index.php?controller=shares&action=shares');
             } else {
                 echo "Login failed";
             }

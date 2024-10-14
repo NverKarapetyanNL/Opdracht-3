@@ -44,8 +44,11 @@ if ($action === 'login') {
 <body>
 <?php include 'views/navbar.php'; ?>
 
-<div class="container">
-    <h1>Welcome to Shareboard</h1>
+<div class="container text-center mt-5">
+    <h1>Welcome To ShareBoard</h1>
+    <p>Find something cool? Share it with our community. Look at other shares as well</p>
+
+    <a href="/Opdracht%203/mvcnl/index.php?controller=shares&action=createShare" class="btn btn-primary">Share Now</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
