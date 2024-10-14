@@ -19,7 +19,8 @@ $shares = $sharesObj->getShares();
 <body>
 <div class="container mt-5">
     <div class="text-right mb-3">
-        <a href="/Opdracht%203/mvcnl/index.php?controller=shares&action=createShare" class="btn btn-success">Share Something</a>
+        <a href="/Opdracht%203/mvcnl/index.php?controller=shares&action=createShare" class="btn btn-success">Share
+            Something</a>
     </div>
 
     <?php foreach ($shares as $share): ?>
@@ -29,11 +30,14 @@ $shares = $sharesObj->getShares();
                 <p class="text-muted"><?php echo $share->create_date; ?></p>
 
                 <p class="card-text"><?php echo $share->body; ?></p>
+                <a href="<?php echo $share->link; ?>" target="_blank">
+                    <?php echo $share->link; ?>
+                </a><br><br>
 
                 <a href="/Opdracht%203/mvcnl/index.php" class="btn btn-primary" target="_blank">Go To Website</a>
 
-                <!-- Delete Formulier -->
-                <form action="/Opdracht%203/mvcnl/index.php?controller=shares&action=deleteShare" method="POST" class="d-inline">
+                <form action="/Opdracht%203/mvcnl/index.php?controller=shares&action=deleteShare" method="POST"
+                      class="d-inline">
                     <input type="hidden" name="id" value="<?php echo $share->id; ?>">
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
